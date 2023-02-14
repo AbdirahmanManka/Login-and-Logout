@@ -1,0 +1,116 @@
+
+body{
+   background-color: aliceblue;
+   background-size: cover;
+}
+.login-form1{
+    max-width: 300px;
+    justify-content: center;
+    margin-top: 5px;
+    width: 300px;
+    padding-left: 50px;
+
+    
+   
+
+  }.sign{
+    margin-left: 100px;
+  }
+  .yes{
+    color: bisque;
+    margin-left: 160px;
+  }
+  .in1{
+   background-color: rgba(255, 255, 255,0.33);
+   box-shadow: 0px 8px 32px 0 rgba(255, 196, 0, 0.73);
+   backdrop-filter: blur(1px);
+   background-color: slategray;
+   border: 0px solid black;
+   margin-top: 100px;
+   margin-left: 10px;
+   
+
+  }
+  .liimo{
+    width: 400px;
+    height: 400px;
+  }
+  .login-form-forgot {
+    float: right;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+  .one{
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    
+
+  }
+ 
+
+
+  .ant-carousel .slick-slide {
+  border: none;
+}
+
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+  .kaar{
+ /* background-image: linear-gradient(to right top, #0c0911, #2e2c31, #515053, #777678, #9f9f9f); */
+    margin-left: 150px;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-right: 150px;
+    
+  }
+  .st1{
+    line-height: 420px;
+    /* background-image: url("./assets/whitish.svg"); */
+    height: 385px;
+    margin-top: 100px;
+    border-radius: 20px;
+
+  }
+  
+  .st2{
+    line-height: 420px;
+    /* background-image: url("./assets/whitish.svg"); */
+    height: 385px;
+    margin-top: 100px;
+
+  }
+  
+  .st3{
+    line-height:420px ;
+    /* background-image: url("./assets/whitish.svg"); */
+    height: 385px;
+    margin-top: 100px;
+
+
+  }
+  
+  .st4{
+    line-height: 420px;
+    /* background-image: url("./assets/whitish.svg"); */
+    height: 385px;
+    margin-top: 100px;
+    
+    
+
+  }
+  /*---Css query media*/
+@media only screen and (max-width: 600px){
+    .liimo{
+      image-rendering:  none;
+    }}

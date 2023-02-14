@@ -1,0 +1,103 @@
+.tab-wrapper-div {
+    background-color: #fb6f92;
+    border-radius: 50px;
+}
+
+.actual-wrapper {
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+    background: #005f73;
+    box-shadow: inset 20px 20px 60px #005162,
+    inset -20px -20px 60px #006d84;
+}
+
+
+.form-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.title-icon {
+    display: flex;
+    gap: 0.5em;
+    align-items: baseline;
+    justify-content: center;
+}
+.title-icon:hover {
+    cursor: pointer;
+}
+
+.required {
+    height: auto;
+    width: 60%;
+    border-radius: 5px;
+    transition: width 0.3s ease-out 0s;
+}
+
+.required.ease-in{
+    width: 50%;
+}
+.my-button {
+    margin: 10px;
+    visibility: visible;
+    position: absolute;
+    transition: visibility 2s ease-in 100s;
+}
+
+.optional {
+    height: auto;
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+ .optional.ease-in {
+     visibility: visible;
+    right: 3%;
+}
+
+ .my-button.ease-in {
+     display: none;
+ }
+
+ .arrow{
+     display: none;
+ }
+ .arrow.ease-in{
+     display: block;
+     position: absolute;
+     right: 43%
+ }
+
+ .arrow:hover{
+     cursor: pointer;
+ }
+
+.form-wrapper .ant-form-item {
+    margin-bottom: 0 !important;
+}
+.form-wrapper  .ant-form-item-label {
+    line-height: 20px !important;
+}
+.form-wrapper  .ant-form-item-control {
+    line-height: 0!important;
+}
+
+.ant-select-selection--single {
+    border-radius: 200px !important;
+}
+
+.ant-select-selection--multiple {
+    border-radius: 200px !important;
+}
+
+.ant-calendar-picker-input {
+    border-radius: 200px !important;
+}

@@ -1,0 +1,25 @@
+.frame-wrapper  {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    position: relative;
+    margin: 50px auto;
+}
+
+.required {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.optional {
+    width: 40%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.button {
+    height: 7%;
+}

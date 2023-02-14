@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState,useEffect} from "react"
 import {Form, Row, Col, Select, Input, DatePicker, Checkbox, Button, message,Popconfirm} from "antd"
 import {AiOutlineRight} from "react-icons/ai"
 import { motion, useAnimation} from "framer-motion"
@@ -10,6 +10,7 @@ function MockLayout(props){
 
     const controlRequired = useAnimation()
     const controlOptional = useAnimation()
+
     const handleSubmit = () => {
         // event.preventDefault()
         props.form.validateFieldsAndScroll((err, _) => {
@@ -53,6 +54,32 @@ function MockLayout(props){
 
 
     }
+    const events= ['click','scroll','load','keydown']
+    const eventHandler =(eventType)=>{
+      
+    };
+    
+   useEffect(()=>{
+    addEvents();
+    
+    return (()=>{
+        
+        removeEvents();
+    })
+},[])
+const addEvents=()=>{
+    
+    events.forEach(eventName=>{
+        window.addEventListener(eventName,eventHandler)
+    })
+    
+}
+const removeEvents=()=>{
+    events.forEach(eventName=>{
+        window.removeEventListener(eventName,eventHandler)
+    })
+};
+
     
 
     return (
@@ -179,7 +206,7 @@ function MockLayout(props){
                                <Form.Item label={"Employee Category"}>
                                    {
                                        getFieldDecorator("employee_category", {rules: [{required: true, message: "Please select the employee category"}]})(
-                                           <Select>
+                                           <Select maxTagCount={2} >
                                                <Select.Option value={"Doctor"}>Doctor</Select.Option>
                                                <Select.Option value={"Lab_Tech"}>Lab Tech</Select.Option>
                                                <Select.Option value={"Nurse"}>Nurse</Select.Option>
